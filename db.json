@@ -1,0 +1,229 @@
+{
+"products": [
+
+
+{
+  "id": 1,
+  "name": "Women Leggings",
+  "category": "women",
+  "price": 899,
+  "image": "/images/leggings1.jpg",
+  "description": "Comfortable stretchable leggings for gym and yoga.",
+  "rating": 4.5,
+  "stock": 30
+},
+{
+  "id": 2,
+  "name": "Sports Bra",
+  "category": "women",
+  "price": 799,
+  "image": "/images/sportsbra.jpg",
+  "description": "Breathable sports bra with strong support.",
+  "rating": 4.4,
+  "stock": 25
+},
+{
+  "id": 3,
+  "name": "Gym Shorts",
+  "category": "women",
+  "price": 699,
+  "image": "/images/shorts1.jpg",
+  "description": "Lightweight gym shorts for intense workouts.",
+  "rating": 4.2,
+  "stock": 40
+},
+{
+  "id": 4,
+  "name": "Men Gym T-Shirt",
+  "category": "men",
+  "price": 599,
+  "image": "/images/mtshirts.jpg",
+  "description": "Sweat-absorbing t-shirt perfect for training.",
+  "rating": 4.3,
+  "stock": 35
+},
+{
+  "id": 5,
+  "name": "Gym Tank Top",
+  "category": "men",
+  "price": 549,
+  "image": "/images/gymtanktop.jpg",
+  "description": "Sleeveless tank top for maximum mobility.",
+  "rating": 4.1,
+  "stock": 20
+},
+{
+  "id": 6,
+  "name": "Compression Tights",
+  "category": "women",
+  "price": 999,
+  "image": "/images/comptights1.jpg",
+  "description": "High performance compression tights for training.",
+  "rating": 4.6,
+  "stock": 18
+},
+{
+  "id": 7,
+  "name": "Women Gym Jacket",
+  "category": "women",
+  "price": 1299,
+  "image": "/images/womengym.jpg",
+  "description": "Lightweight gym jacket for workouts and running.",
+  "rating": 4.5,
+  "stock": 15
+},
+{
+  "id": 8,
+  "name": "Gym Hoodie",
+  "category": "unisex",
+  "price": 1499,
+  "image": "/images/gymhoodie.jpg",
+  "description": "Warm hoodie suitable for gym and casual wear.",
+  "rating": 4.4,
+  "stock": 22
+},
+
+{
+  "id": 9,
+  "name": "Training Shorts",
+  "category": "men",
+  "price": 699,
+  "image": "/images/trainingshorts.jpg",
+  "description": "Lightweight training shorts",
+  "rating": 4.2,
+  "stock": 25
+},
+{
+  "id": 10,
+  "name": "Yoga Pants",
+  "category": "women",
+  "price": 899,
+  "image": "/images/yogapants.jpg",
+  "description": "Flexible yoga pants for workouts",
+  "rating": 4.3,
+  "stock": 20
+},
+{
+  "id": 11,
+  "name": "Gym Joggers",
+  "category": "men",
+  "price": 1099,
+  "image": "/images/gymjoggers.jpg",
+  "description": "Comfortable gym joggers",
+  "rating": 4.4,
+  "stock": 30
+},
+{
+  "id": 12,
+  "name": "Running Shorts",
+  "category": "women",
+  "price": 699,
+  "image": "/images/runningshorts2.jpg",
+  "description": "Lightweight running shorts",
+  "rating": 4.2,
+  "stock": 18
+},
+{
+  "id": 13,
+  "name": "Gym Cap",
+  "category": "accessories",
+  "price": 399,
+  "image": "/images/gymcap.jpg",
+  "description": "Sweat resistant cap",
+  "rating": 4.1,
+  "stock": 40
+},
+{
+"id": 51,
+"name": "Gym Bag",
+"category": "accessories",
+"price": 1299,
+"image": "/images/gymbag.jpg",
+"description": "Spacious gym bag with multiple compartments for workout essentials.",
+"rating": 4.5,
+"stock": 20
+},
+{
+"id": 52,
+"name": "Water Bottle",
+"category": "accessories",
+"price": 399,
+"image": "/images/waterbottle.jpg",
+"description": "Durable BPA-free water bottle ideal for workouts and outdoor activities.",
+"rating": 4.3,
+"stock": 50
+},
+{
+  "id": 53,
+  "name": "Wrist Sweat Band",
+  "price": 299,
+  "category": "accessories",
+  "image": "/images/wristband.jpg",
+  "rating": 4
+},
+{
+  "id": 34,
+  "name": "Yoga Mat",
+  "category": "accessories",
+  "price": 799,
+  "image": "/images/yogamat.jpg",
+  "description": "Non-slip yoga mat perfect for yoga, stretching and home workouts."
+},
+{
+  "id": 35,
+  "name": "Gym Towel",
+  "category": "accessories",
+  "price": 299,
+  "image": "/images/gymtowel.jpg",
+  "description": "Soft and absorbent gym towel perfect for workouts and training."
+},
+ {
+      "id": 14,
+      "name": "Gym Gloves",
+      "category": "accessories",
+      "price": 499,
+      "image": "/images/gymgloves2.jpg",
+      "description": "Breathable weightlifting gloves for better grip and wrist support"
+    }
+
+
+],
+
+"users": [],
+"cart": [],
+"wishlist": [],
+
+"categories": [
+{
+"id": 1,
+"name": "Leggings (Women)",
+"image": "/images/leggigns143.jpg",
+"category": "women"
+},
+{
+"id": 2,
+"name": "Shorts (Men & Women)",
+"image": "/images/menwomensh.jpg",
+"category": "unisex"
+},
+{
+"id": 3,
+"name": "Sports Bra (Women)",
+"image": "/images/womenbras.jpg",
+"category": "women"
+},
+{
+"id": 4,
+"name": "T-Shirts (Men & Women)",
+"image": "/images/m&wtshirts.jpg",
+"category": "men"
+},
+{
+"id": 5,
+"name": "Tracks (Men & Women)",
+"image": "/images/menwomentrack.jpg",
+"category": "unisex"
+}
+
+]
+}
