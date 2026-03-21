@@ -25,8 +25,8 @@ function ProductDetails() {
 
     // 🔥 PRODUCTS
     const products = [
-        
-   { id: "1", name: "Women Leggings", category: "women", price: "₹899", image: "/images/leggings1.jpg", description: "Comfortable stretchable leggings for gym and yoga.", rating: 4.5 },
+
+        { id: "1", name: "Women Leggings", category: "women", price: "₹899", image: "/images/leggings1.jpg", description: "Comfortable stretchable leggings for gym and yoga.", rating: 4.5 },
         { id: "2", name: "Sports Bra", category: "women", price: "₹799", image: "/images/sportsbra.jpg", description: "Breathable sports bra with strong support.", rating: 4.4 },
         { id: "3", name: "Gym Shorts", category: "women", price: "₹699", image: "/images/shorts1.jpg", description: "Lightweight gym shorts for intense workouts.", rating: 4.2 },
         { id: "4", name: "Men Gym T-Shirt", category: "men", price: "₹599", image: "/images/mtshirts.jpg", description: "Sweat-absorbing t-shirt perfect for training.", rating: 4.3 },
@@ -197,20 +197,44 @@ function ProductDetails() {
             </div>
 
             {/* 🔥 REVIEWS */}
-            <div style={{ marginTop: "40px" }}>
-                <h3>Customer Reviews</h3>
-                {reviews.map((r) => (
-                    <div key={r.id} style={{
-                        background: "#111",
-                        color: "white",
-                        padding: "10px",
-                        marginBottom: "10px",
-                        borderRadius: "8px"
-                    }}>
-                        <p><strong>{r.user}</strong> ⭐ {r.rating}</p>
-                        <p>{r.comment}</p>
+            <div className="reviews-box">
+
+                <h4>Product Ratings & Reviews</h4>
+
+                <div className="rating-summary">
+                    <h2>4.4 ⭐</h2>
+                    <p>1000 Ratings</p>
+                </div>
+
+                <div className="rating-bars">
+
+                    <div>
+                        Excellent
+                        <div className="bar"><div style={{ width: "80%" }}></div></div>
                     </div>
-                ))}
+
+                    <div>
+                        Very Good
+                        <div className="bar"><div style={{ width: "50%" }}></div></div>
+                    </div>
+
+                    <div>
+                        Good
+                        <div className="bar"><div style={{ width: "20%" }}></div></div>
+                    </div>
+
+                    <div>
+                        Average
+                        <div className="bar"><div style={{ width: "10%" }}></div></div>
+                    </div>
+
+                    <div>
+                        Poor
+                        <div className="bar"><div style={{ width: "5%" }}></div></div>
+                    </div>
+
+                </div>
+
             </div>
 
             {/* 🔥 SIMILAR PRODUCTS SLIDER */}
