@@ -26,7 +26,7 @@ app.use(cookieParser());
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "Myravul@135",
+  password: "1234",
   database: "switchfit"
 });
 
@@ -122,7 +122,8 @@ app.post("/login", (req, res) => {
 
     const payload = {
       id: user.id,
-      email: user.email
+      email: user.email,
+      role: user.role
     };
 
     const accessToken = generateAccessToken(payload);
@@ -163,7 +164,8 @@ app.post("/refresh", (req, res) => {
 
     const accessToken = generateAccessToken({
       id: user.id,
-      email: user.email
+      email: user.email,
+      role: user.role
     });
 
     res.json({ accessToken });
@@ -196,6 +198,29 @@ function verifyToken(req, res, next) {
   });
 
 }
+
+/* ================= VERIFY ADMIN ================= */
+
+function verifyAdmin(req, res, next) {
+  if (req.user && req.user.role === 'admin') {
+    next();
+  } else {
+    return res.status(403).json({ message: "Admin privileges required" });
+  }
+}
+
+/* ================= ADMIN API ================= */
+
+app.get("/admin/users", verifyToken, verifyAdmin, (req, res) => {
+  const sql = "SELECT id, name, email, role FROM users";
+  db.query(sql, (err, result) => {
+    if (err) {
+      console.log(err);
+      return res.status(500).json({ message: "Database error" });
+    }
+    res.json(result);
+  });
+});
 
 /* ================= PRODUCTS API ================= */
 

@@ -1085,18 +1085,24 @@ function Login() {
 
                 /* save user */
 
+                const userRole = data.user.role || 'user';
+                
                 localStorage.setItem(
                     "user",
                     JSON.stringify({
                         id: data.user.id,
                         name: data.user.name,
-                        email: data.user.email
+                        email: data.user.email,
+                        role: userRole
                     })
                 );
 
-                /* redirect to home */
-
-                navigate("/", { replace: true });
+                /* redirect to home based on role */
+                if (userRole === "admin") {
+                    navigate("/admin", { replace: true });
+                } else {
+                    navigate("/", { replace: true });
+                }
 
             } else {
 
